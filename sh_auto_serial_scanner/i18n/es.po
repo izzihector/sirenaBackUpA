@@ -1,0 +1,108 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_auto_serial_scanner
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-24 07:59+0000\n"
+"PO-Revision-Date: 2020-10-24 07:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Alert!"
+msgstr "¡Alerta!"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,field_description:sh_auto_serial_scanner.field_stock_move___barcode_scanned
+msgid "Barcode Scanned"
+msgstr "Código de barras escaneado"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,field_description:sh_auto_serial_scanner.field_stock_move__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,field_description:sh_auto_serial_scanner.field_stock_move__id
+msgid "ID"
+msgstr "CARNÉ DE IDENTIDAD"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,field_description:sh_auto_serial_scanner.field_stock_move____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Picking type is not outgoing or incoming or internal transfer."
+msgstr "El tipo de picking no es saliente, entrante o transferencia interna."
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Pls add all product items in line than rescan."
+msgstr "Por favor, agregue todos los artículos del producto en línea y luego vuelva a escanear."
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Scanned Internal Reference/Barcode not exist in any product"
+msgstr "La referencia interna escaneada / el código de barras no existe en ningún producto"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Serial Number already exist!"
+msgstr "¡El número de serie ya existe!"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model,name:sh_auto_serial_scanner.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de stock"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "There are no available qty for this lot/serial.%s"
+msgstr "No hay cantidad disponible para este lote / serie.% S"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "There are no available qty for this lot/serial: %s"
+msgstr "No hay cantidad disponible para este lote / serie:% s"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,help:sh_auto_serial_scanner.field_stock_move___barcode_scanned
+msgid "Value of the last barcode scanned."
+msgstr "Valor del último código de barras escaneado."
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Warning"
+msgstr "Advertencia"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "You can not scan item in %s state."
+msgstr "No puede escanear un elemento en el estado% s."
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "You can only process 1.0 %s of products with unique serial number."
+msgstr "Solo puede procesar el 1.0% de los productos con un número de serie único."

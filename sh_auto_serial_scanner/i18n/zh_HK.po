@@ -1,0 +1,108 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_auto_serial_scanner
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-24 07:59+0000\n"
+"PO-Revision-Date: 2020-10-24 07:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Alert!"
+msgstr "警报！"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,field_description:sh_auto_serial_scanner.field_stock_move___barcode_scanned
+msgid "Barcode Scanned"
+msgstr "条码扫描"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,field_description:sh_auto_serial_scanner.field_stock_move__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,field_description:sh_auto_serial_scanner.field_stock_move__id
+msgid "ID"
+msgstr "ID"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,field_description:sh_auto_serial_scanner.field_stock_move____last_update
+msgid "Last Modified on"
+msgstr "最后修改时间"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Picking type is not outgoing or incoming or internal transfer."
+msgstr "拣配类型不是传出，传入或内部传输。"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Pls add all product items in line than rescan."
+msgstr "请在行中添加所有产品项，然后重新扫描。"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Scanned Internal Reference/Barcode not exist in any product"
+msgstr "扫描的内部参考/条形码在任何产品中都不存在"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Serial Number already exist!"
+msgstr "序列号已经存在！"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model,name:sh_auto_serial_scanner.model_stock_move
+msgid "Stock Move"
+msgstr "库存变动"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "There are no available qty for this lot/serial.%s"
+msgstr "该批次/序列没有可用的数量。％s"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "There are no available qty for this lot/serial: %s"
+msgstr "该批次/序列没有可用的数量：％s"
+
+#. module: sh_auto_serial_scanner
+#: model:ir.model.fields,help:sh_auto_serial_scanner.field_stock_move___barcode_scanned
+msgid "Value of the last barcode scanned."
+msgstr "最后扫描的条形码的值。"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "Warning"
+msgstr "警告"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "You can not scan item in %s state."
+msgstr "您无法扫描处于％s状态的项目。"
+
+#. module: sh_auto_serial_scanner
+#: code:addons/sh_auto_serial_scanner/models/stock_move.py:0
+#, python-format
+msgid "You can only process 1.0 %s of products with unique serial number."
+msgstr "您只能处理具有唯一序列号的产品的1.0％s。"

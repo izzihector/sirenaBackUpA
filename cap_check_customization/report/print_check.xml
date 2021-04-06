@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Inherited template to add CSS file. -->
+        <template id="assets_common_check" name="l10n_us_check_printing pdf assets" inherit_id="web.report_assets_common">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss"
+                      href="/cap_check_customization/static/src/scss/report_check_top.scss"/>
+            </xpath>
+        </template>
+
+        <!-- Override: Added Check format based on USA -->
+        <template id="l10n_us_check_printing.ckus_check">
+            <div class="ckus_check">
+                <t t-if="page['state'] == 'cancelled'">
+                    <div class="o-watermark">VOID</div>
+                </t>
+
+                <div class="sequence_number" t-esc="o.check_number"/>
+                <div class="ckus_payee_name">
+                    <t t-esc="o.company_id.name"/><br/>
+                    <t t-esc="o.company_id.street" /><br/>
+                    <t t-esc="o.company_id.city" />
+                    <t t-esc="o.company_id.state_id.code" />
+                    <t t-esc="o.company_id.zip" />
+                </div>
+                <div class="ckus_payee_bank text-left">
+                    <p class="check_margin0">
+                        <t t-esc="o.journal_id.bank_id.name"/>
+                    </p>
+                    <span>61-650/620</span>
+                </div>
+                <div class="sequence_number" t-if="page['sequence_number'] and page['manual_sequencing']"
+                 t-esc="page['sequence_number']"/>
+                <div class="ckus_amount">
+                    <strong class="check_margin">
+                        <t t-esc="o.currency_id.symbol"/>
+                    </strong>
+                    <t t-esc="page['amount'].replace(o.currency_id.symbol, '')"/>
+                </div>
+                <div class="check_custom_pay">
+                    Pay to the<br/>Order of
+
+                </div>
+                <div class="check_partner_name_of_Us">
+                    <t t-esc="o.partner_id.name"/>
+                </div>
+                <div class="ckus_amount_in_word" t-esc="page['amount_in_word']"/>
+                <div class="ckus_payee_addr">
+                    <img  src="/cap_check_customization/static/src/img/chase_logo.png" style="max-height:50pt;max-width:50%" alt="Logo"/>
+                    <p>JPMorgan Chase Bank, N.A.<br/> www.Chase.com</p>
+                </div>
+                <t t-if="page['memo']">
+                    <div class="check_memo">Memo</div>
+                    <div class="ckus_memo" t-esc="page['memo']"/>
+                </t>
+                <div class="check_routing_account">
+                    <t t-esc="o.journal_id.bank_account_id.aba_routing"/>
+                    <t t-esc="o.journal_id.bank_account_id.acc_number"/>
+                    <t t-esc="o.check_number"/>
+                </div>
+            </div>
+        </template>
+
+        <!-- Override: Added Check format based on Canada -->
+        <template id="l10n_ca_check_printing.ckca_check">
+            <div class="ckca_check">
+                <t t-if="page['state'] == 'cancelled'">
+                    <div class="o-watermark">VOID</div>
+                </t>
+                <div class="ckca_payee_name">
+                    <img t-if="o.company_id.logo" t-att-src="image_data_uri(o.company_id.logo)" style="max-height:65pt;max-width:90%" alt="Company Logo"/>
+                </div>
+                <div class="ckca_company_addr text-center">
+                    <t t-esc="o.company_id.name"/><br/>
+                    <t t-esc="o.company_id.street" /><br/>
+                    <t t-esc="o.company_id.city" />
+                    <t t-esc="o.company_id.state_id.code" />
+                    <t t-esc="o.company_id.zip" />
+                </div>
+                <div class="sequence_number" t-if="page['sequence_number'] and page['manual_sequencing']"
+                 t-esc="page['sequence_number']"/>
+                <div class="sequence_number" t-esc="o.check_number"/>
+                <!-- <div class="ckca_amount">
+                    <strong class="check_margin">
+                        <t t-esc="o.currency_id.symbol"/>
+                    </strong>
+                    <t t-esc="page['amount'].replace(o.currency_id.symbol, '')"/>
+                </div> -->
+                <div class="check_pay">
+                    Pay<br/> to<br/> the<br/>Order<br/> of
+                </div>
+                <div class="check_partner_name">
+                    <t t-esc="o.partner_id.name"/>
+                </div>
+                <t t-if="page['memo']">
+                    <div class="check_memo">Memo</div>
+                    <div class="ckus_memo" t-esc="page['memo']"/>
+                </t>
+                <div class="check_routing_account">
+                    <t t-esc="o.check_number"/>
+                    <t t-esc="o.journal_id.bank_account_id.aba_routing"/>
+                    <t t-esc="o.journal_id.bank_account_id.acc_number"/>
+                </div>
+            </div>
+        </template>
+    </data>
+</odoo>
